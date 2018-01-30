@@ -12,11 +12,13 @@ puts
 # the splat operator means variable length 
 
 def foo2(arg1, arg2, *other_arg)    
+  print arg1 
   print other_arg  
   p other_arg[0]
 end
 
 puts "Calling foo2"
+foo2("dena", "macarena", "almudena", "azucena", ["cat", "dog"])
 foo2(1,2,3,4)
 foo2(1,2,[3,4])
 

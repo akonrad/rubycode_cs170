@@ -10,9 +10,14 @@ end
 
 # downcase and split are defined in String class
 p IO.read("mytext.txt")
+
 p IO.read("mytext.txt").split(/\W+/)     # creastes an array 
+
 p IO.read("mytext.txt").split(/\W+/).select { |s| s =~ /^[aeiou]/i }
+
 p IO.read("mytext.txt").split(/\W+/).select { |s| s =~ /^[aeiou]/i }.map { |s| s.downcase }  
+
+
 p IO.read("mytext.txt").split(/\W+/).select { |s| s =~ /^[aeiou]/i }.
   map { |s| s.downcase }.uniq  
 

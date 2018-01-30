@@ -11,3 +11,4 @@ Calling a ruby program inside irb
 $ ssh-keygen -t rsa -C "akonrad@mills.edu"
 $ cat ~/.ssh/id_rsa.pub 
 $ git clone git@bitbucket.org:almudenakonrad/rubycodecs170.git 
+$ got push origin master 
