@@ -1,4 +1,5 @@
 # See book Figure 3.2
+
 # i for case insensitive
 # * zero or more    + 1 or more      ? 0 or 1
 # ^ start of the line   $ end of the line 
@@ -15,8 +16,8 @@ puts (/llo/ =~ "hello") ? "Matching" :  "Not matching"
 
 puts "**************"
 
-puts "8:25 PM" =~  /(\d\d?):(\d\d)\s*([ap])m$/i ? "yes" : "not"  
-# $1, $2, $3 contains the quantity in parenthesis 
+puts "8:25 PM" =~  /(\d\d?):(\d\d)\s*([ap]m)$/i ? "yes" : "not"  
+# $1, $2, $3 contains the content in parenthesis 
 puts "#{$1}  #{$2}  #{$3} " 
 
 puts "**************"
